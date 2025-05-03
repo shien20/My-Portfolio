@@ -1,0 +1,41 @@
+.projects-link{
+    color: #EB4A4A;
+}
+
+.body {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.project-header{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+hr{
+    margin-top: 1.4rem;
+    width:95%;
+    border-width:10;
+    border-color: #EB4A4A;
+}
+
+.tech-stack p, .features p{
+    text-align: start;
+}
