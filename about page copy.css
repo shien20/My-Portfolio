@@ -1,0 +1,149 @@
+.about-link{
+    font-weight: 700;
+    color: #EB4A4A;
+}
+
+.body{
+    display: grid;
+    grid-template-rows: 200px 450px;
+}
+
+.about-title{
+    margin-left: 30px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 70px 50px;
+    margin-left: 60px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about p{
+    font-size: 70px;
+    font-weight: 500;
+    color: #EB4A4A;
+    
+}
+
+.about-icon-image{
+    height: 80px;
+    margin-left: 20px;
+}
+
+.about-description{
+    margin-top: 10px;
+    width: 80%;
+    text-align: justify;
+}
+
+.programming-language{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.person-coding img{
+    height: 390px;
+}
+
+.person-coding{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    margin-right: 50px;
+}
+
+.programming-language-section{
+    display: grid;
+    grid-template-rows: 75px 190px 100px;
+}
+
+.programming-language-text p {
+    font-size: 40px;
+    font-weight: 500;
+    color: #EB4A4A;
+    
+}
+
+.languages{
+    padding-left: 20px;
+}
+
+.languages p{
+    font-size: 25px;
+}
+
+.languages-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.java img, .python img, .html img{
+    height: 85px;
+}
+
+.java{
+    padding-left: 60px;
+}
+
+.html{
+    padding-right: 230px;
+}
+
+.python{
+    padding-left: -50px;
+    padding-right: -50px;
+}
+
+hr{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border: 1px solid #EB4A4A;
+    width: 95%;
+    border-radius: 100px;
+    border-width: 3px;
+}
+
+.education{
+    display: grid;
+    grid-template-rows: 80px 300px;
+}
+
+.education-text{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-left: 60px;
+    
+}
+
+.education-text p{
+    font-size: 70px;
+    font-weight: 500;
+    color: #EB4A4A;
+    
+}
+
+.education-stats{
+    width: 700px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-top: 30px;
+
+}
+
+.education-stats p span{
+    text-decoration: underline;
+}
+.education-stats p{
+    font-size: 18px;
+}

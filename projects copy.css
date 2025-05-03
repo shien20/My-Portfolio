@@ -1,0 +1,149 @@
+.projects-link{
+    font-weight: 700;
+    color: #EB4A4A;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    flex: 100px 1;
+    align-items: center;
+}
+
+.title{
+    margin-top: 30px;
+}
+
+.title p{
+    text-align: center;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    color: #EB4A4A;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.sub-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    width: 1200px;
+    justify-content:space-around;
+    margin: 60px
+
+}
+
+.rectangle{
+    display: grid;
+    grid-template-rows: 260px 90px 50px;
+    width: 400px;
+    height: 450px;
+    background-color: wheat;
+    background-image: linear-gradient(to bottom, #404040 , #0E0E0E);
+    border-radius: 30px;
+    box-shadow: 0px -14px 60px rgb(57, 57, 57);
+    transition: width 0.5s, height 0.5s;
+}
+
+.rectangle:hover{
+    width: 410px;
+    height: 460px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.text{
+    margin-left: 30px;
+    align-items: center;
+    width: 300px;
+}
+
+.text p{
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+
+}
+
+.button1{
+    margin-top: 10px;
+    margin-left: 26px;
+    display: flex;
+    flex: 1;
+
+}
+
+.button1 button:hover{
+    cursor: pointer;
+}
+
+.button1 button:active, .button1 img:active{
+    opacity: 0.2;
+}
+
+.button1 button{
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    border-radius: 30px; 
+    height: 45px;
+    align-items: center;
+    place-items: center;
+    transition: opacity 0.4s;
+}
+
+.button1 button p{
+    margin-left: 5px;
+    color: black;
+    font-weight: 800;
+
+}
+
+.button1 img{
+    margin-right: -10px;
+    width: 35px;
+    height: 35px;
+    transition: opacity 0.4s;
+}
+
+
+.book-management-system{
+    width: 180px;
+    height: 160px;
+}
+
+.mental-health-application-ui{
+    height: 170px;
+}
+
+.portfolio-website{
+    height: 170px;
+}
+
+.argumentative-paper{
+    height: 170px;
+}
+
+.documentary{
+    height: 170px;
+}
+
+.youtube{
+    height: 150px;
+}
