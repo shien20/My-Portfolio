@@ -1,3 +1,12 @@
+.header{
+    margin: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 body{
     background-color: black;  
     margin-bottom: 0;
@@ -21,6 +30,8 @@ p{
     flex-direction: row;
     flex: 1;
     justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
 }
 
 .left a{
@@ -101,14 +112,6 @@ p{
 
 .right button:active{
     opacity: 0.6;
-}
-
-.header{
-    margin-top: 40px;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .home-link:hover, .about-link:hover, .projects-link:hover, .contact-link:hover{

@@ -41,6 +41,10 @@ hr{
     border-color: #EB4A4A;
 }
 
+.content{
+    width: 90%;
+}
+
 .tech-stack p, .features p{
     font-size: 1.15rem;
     text-align: start;
@@ -48,13 +52,6 @@ hr{
 
 .tech-stack h2, .features h2, .snippets h2, .github-repo h2{
     font-size: 2rem;
-}
-
-.snippets img{
-    width: 40rem;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
 }
 
 .github-repo a{
