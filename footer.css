@@ -4,7 +4,6 @@
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     border-top: 1px solid var(--border-color);
     padding: var(--spacing-2xl) 0 var(--spacing-lg);
-    margin-top: var(--spacing-2xl);
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
