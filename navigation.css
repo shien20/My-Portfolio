@@ -36,8 +36,10 @@
 
 .nav-logo .logo-img {
     height: 32px;
-    width: auto;
+    width: 32px;
     transition: transform 0.3s ease;
+    color: var(--primary-light);
+    filter: drop-shadow(0 0 0 black) drop-shadow(0 0 1px black);
 }
 
 .nav-logo .logo-img:hover {

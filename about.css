@@ -154,14 +154,14 @@
 
 .education-timeline {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100 auto;
     position: relative;
 }
 
 .education-timeline::before {
     content: '';
     position: absolute;
-    left: 50px;
+    left: 200px;
     top: 0;
     bottom: 0;
     width: 3px;
@@ -181,7 +181,7 @@
 .education-item::before {
     content: '';
     position: absolute;
-    left: 42px;
+    left: 189px;
     top: 8px;
     width: 18px;
     height: 18px;
@@ -208,10 +208,13 @@
     background: transparent;
     border-radius: var(--radius-lg);
     border: none;
+    margin-left: 100px;
 }
 
-.education-content {
+.education-content{
     flex: 1;
+    min-width: 800px;
+    max-width: 800px;
     padding: var(--spacing-lg);
     background: var(--bg-card);
     border-radius: var(--radius-xl);
@@ -219,6 +222,7 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-left: 50px;
 }
 
 .education-content::before {
