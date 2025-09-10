@@ -1,3 +1,5 @@
+// Built using EmailJS
+
 // Replace with your EmailJS credentials
 const PUBLIC_KEY = "1SwRXRb1ph71XKYC9";      
 const SERVICE_ID = "service_uddbdpd";      
