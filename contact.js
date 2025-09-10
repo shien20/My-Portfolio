@@ -1,47 +1,35 @@
-let names, emails, phoneNumbers, messages;
+// Replace with your EmailJS credentials
+const PUBLIC_KEY = "1SwRXRb1ph71XKYC9";      
+const SERVICE_ID = "service_uddbdpd";      
+const TEMPLATE_ID = "template_rxx2e0r";    
 
-function sendEmail(){
+// Initialize EmailJS
+(function() {
+  emailjs.init(PUBLIC_KEY);
+})();
 
-    names = document.getElementById("name").value;
-    emails = document.getElementById("email").value;
-    phoneNumbers = document.getElementById("phone-number").value;
-    messages = document.getElementById("respond").value;
+// Select form
+const form = document.getElementById("contactForm");
 
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "shienlee221004@gmail.com",
-        Password : "25CA8B28A21F51E0D2CF9315D5E67947275F",
-        To : 'shienlee221004@gmail.com',
-        From : document.getElementById("email").value,
-        Subject : "Contact Me Form",
-        Body : "Name: " + names + "<br/>" + 
-                "Email: " + emails + "<br/>" + 
-                "Phone Number: " + phoneNumbers + "<br/>" + 
-                "Message:" + "<br/>" + document.getElementById("respond").value
-    }).then(
-        message => {
-            if(message == "OK"){
-                alert("Message Sent")
-            }
-            else{
-                alert("Error, Please Try Again")
-            }
-        }
-    );
+  // Collect data from form fields
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
 
-    document.getElementById("name").value = "";
-    document.getElementById("email").value  = "";
-    document.getElementById("phone-number").value  = "";
-    document.getElementById("respond").value = "";
-    
-}
-/*
-
-
-
-
-
-*/
-
-
+  // Send email via EmailJS
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, formData)
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      alert("❌ Failed to send message. Please try again later.");
+    });
+});
