@@ -85,6 +85,7 @@
     border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    width: 9rem;
 }
 
 .skill-item::before {
@@ -147,124 +148,6 @@
     z-index: 1;
 }
 
-/* Education Section */
-.education-section {
-    margin-bottom: var(--spacing-3xl);
-}
-
-.education-timeline {
-    max-width: 800px;
-    margin: 100 auto;
-    position: relative;
-}
-
-.education-timeline::before {
-    content: '';
-    position: absolute;
-    left: 200px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
-    border-radius: 2px;
-    box-shadow: var(--shadow-glow);
-}
-
-.education-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-xl);
-    margin-bottom: var(--spacing-2xl);
-    position: relative;
-}
-
-.education-item::before {
-    content: '';
-    position: absolute;
-    left: 189px;
-    top: 8px;
-    width: 18px;
-    height: 18px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    border: 4px solid var(--bg-primary);
-    z-index: 1;
-    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
-}
-
-.education-item.current::before {
-    background: var(--accent-color);
-    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.3);
-    animation: pulse 2s infinite;
-}
-
-.education-year {
-    min-width: 60px;
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    color: var(--text-primary);
-    text-align: center;
-    padding: var(--spacing-sm);
-    background: transparent;
-    border-radius: var(--radius-lg);
-    border: none;
-    margin-left: 100px;
-}
-
-.education-content{
-    flex: 1;
-    min-width: 800px;
-    max-width: 800px;
-    padding: var(--spacing-lg);
-    background: var(--bg-card);
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    margin-left: 50px;
-}
-
-.education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.education-content:hover::before {
-    opacity: 1;
-}
-
-.education-content:hover {
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-glow);
-    transform: translateX(5px);
-}
-
-.education-title {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.education-institution {
-    font-size: var(--font-size-base);
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-xs);
-}
-
-.education-grade {
-    font-size: var(--font-size-base);
-    color: var(--accent-color);
-    font-weight: 500;
-}
 
 /* Responsive Design for About Page */
 @media (max-width: 768px) {
@@ -277,47 +160,31 @@
         gap: var(--spacing-lg);
     }
     
-    .education-timeline::before {
-        left: 20px;
-    }
-    
-    .education-item::before {
-        left: 12px;
-    }
-    
-    .education-year {
-        min-width: 50px;
-        font-size: var(--font-size-base);
-    }
-    
-    .education-content {
-        padding: var(--spacing-md);
-    }
-    
-    .education-title {
-        font-size: var(--font-size-lg);
-    }
 }
 
 @media (max-width: 480px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .skills-title{
+        font-size: var(--font-size-lg);
+    }
+    .skill-name{
+        font-size: var(--font-size-xs);
+    }
+    .skills-grid{
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .skill-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .skill-icon img {
+        width: 20px;
+        height: 20px;
+    }
+    .skill-item{
+        width: 5.5rem;
+        padding: var(--spacing-md);
     }
     
-    .education-item {
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-    
-    .education-timeline::before {
-        display: none;
-    }
-    
-    .education-item::before {
-        display: none;
-    }
-    
-    .education-content:hover {
-        transform: none;
-    }
+
 }
