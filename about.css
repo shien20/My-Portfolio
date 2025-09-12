@@ -185,6 +185,12 @@
         width: 5.5rem;
         padding: var(--spacing-md);
     }
-    
+    .about-page{
+        padding-top: 100px;
+    }
+    .intro-text{
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xl);
+    }
 
 }
